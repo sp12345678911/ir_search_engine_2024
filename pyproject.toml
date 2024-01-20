@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ir-research-engine"
+version = "0.1.0"
+description = ""
+authors = ["eric_zeng <eric.zeng@nadisystem.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.0"
+fastapi = {extras = ["all"], version = "^0.109.0"}
+numpy = "^1.26.3"
+jieba = "^0.42.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
