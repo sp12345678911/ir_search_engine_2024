@@ -69,14 +69,14 @@ class Module:
         tfidf = tfbnp * idfbnp
         self.tfidf = tfidf.tolist()
         for g in tfidf:
-            f = open('data\weight1.txt', mode='a', newline='')
+            f = open('data\weight1.txt', mode='a+', newline='')
             writer = csv.writer(f)
             writer.writerow(g)
             f.close()
         twoTFlinp = np.array(self.otherTFb)
         twoTFli = twoTFlinp.tolist()
         for h in twoTFli:
-            f = open('data\weight2.txt', mode='a', newline='')
+            f = open('data\weight2.txt', mode='a+', newline='')
             writer = csv.writer(f)
             writer.writerow(h)
             f.close()
